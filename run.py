@@ -25,7 +25,7 @@ def cluster(l1,l2,k,total):
 		mean_l2 = mean(l2,total)
 		#print(f'Mean L1: {mean_l1} Mean L2: {mean_l2}')
 		for n in l1: 
-			d1 = sqrt((n-mean_l1) **2 +  (n-mean_l2) **2)
+			d1 = sqrt((n-mean_l1) **2 +  (n-mean_l1) **2)
 			d2 = sqrt((n-mean_l2) **2 + (n-mean_l2)**2)
 			if	d1 < d2:
 				cluster1.append(n)	
